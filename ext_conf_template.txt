@@ -1,0 +1,23 @@
+# cat=Default; type=int+; label=Contact Page UID
+default.contactPageUid =
+
+# cat=Default; type=int+; label=Search Page UID
+default.searchPageUid =
+
+# cat=English; type=string; label=Opening Hours (Mon - Fri)
+en.openingHoursMonFri =
+
+# cat=English; type=string; label=Opening Hours (Sat)
+en.openingHoursSat =
+
+# cat=English; type=string; label=Opening Hours (Sun)
+en.openingHoursSun =
+
+# cat=Polish; type=string; label=Opening Hours (Mon - Fri)
+pl.openingHoursMonFri =
+
+# cat=Polish; type=string; label=Opening Hours (Sat)
+pl.openingHoursSat =
+
+# cat=Polish; type=string; label=label=Opening Hours (Sun)
+pl.openingHoursSun =
