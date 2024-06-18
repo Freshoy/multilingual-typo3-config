@@ -1,0 +1,14 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Vendor\Package\:
+    resource: '../Classes/*'
+
+  Vendor\Package\Event\DynamicConstantsResolver:
+    tags:
+      - name: event.listener
+        identifier: 'dynamic-constants-resolver'
+        event: TYPO3\CMS\Frontend\Event\AfterPageAndLanguageIsResolvedEvent
