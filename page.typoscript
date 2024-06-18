@@ -1,0 +1,11 @@
+page = PAGE
+page {
+    typeNum = 0
+
+    10 = FLUIDTEMPLATE
+    10 {
+        dataProcessing {
+            10 = Vendor\Package\DataProcessing\SiteSettingsProcessor
+        }
+    }
+}
