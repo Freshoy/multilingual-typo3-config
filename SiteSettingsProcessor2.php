@@ -44,23 +44,7 @@ class SiteSettingsProcessor2 implements DataProcessorInterface
             return $processedData;
         }
 
-        $prefix = DynamicConstantsResolver::OPTION_PREFIX . '.';
-        $constantsArray = [];
-
-        /** @var FrontendTypoScript $typoScript */
-        $typoScript = $request->getAttribute('frontend.typoscript')
-            ->getFlatSettings();
-
-        foreach ($typoScript as $name => $value) {
-            if (!str_starts_with($name, $prefix)) {
-                continue;
-            }
-
-            $name = str_replace($prefix, '', $name);
-            $constantsArray[$name] = $value;
-        }
-
-        $processedData[self::OBJECT_KEY] = $constantsArray;
+        $processedData[self::OBJECT_KEY] = $this->getRelatedConstants($request);
 
         return $processedData;
     }
