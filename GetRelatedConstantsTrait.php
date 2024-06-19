@@ -10,7 +10,7 @@ use Psr\Http\Message\ServerRequestInterface;
 use TYPO3\CMS\Core\Configuration\Exception\ExtensionConfigurationPathDoesNotExistException;
 use TYPO3\CMS\Core\Configuration\Exception\ExtensionConfigurationExtensionNotConfiguredException;
 
-trait GetRelatedConstants
+trait GetRelatedConstantsTrait
 {
     /**
      * @param ServerRequestInterface $request
